@@ -1,7 +1,14 @@
-# 아픈 동물 찾기
+# 1. 아픈 동물 찾기
 질문: 동물 보호소에 들어온 동물 중 아픈 동물1의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 이때 결과는 아이디 순으로 조회해주세요.
 
 SELECT ANIMAL_ID, NAME
 FROM ANIMAL_INS
 WHERE INTAKE_CONDITION = 'Sick'
 ORDER BY ANIMAL_ID;
+
+# 2. 나이 정보가 없는 회원 수 구하기
+질문: USER_INFO 테이블에서 나이 정보가 없는 회원이 몇 명인지 출력하는 SQL문을 작성해주세요. 이때 컬럼명은 USERS로 지정해주세요.
+
+SELECT COUNT(*) AS USERS
+FROM USER_INFO
+WHERE AGE IS NULL;
