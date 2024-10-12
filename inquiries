@@ -1,3 +1,9 @@
 # COLUMNS 알아보기
 SHOW COLUMNS FROM TABLE;
 
+# DATA TYPE > TINYINT란
+TINYINT(m)
+- (m) indicates the column display width
+- TINYINT accepts [-128 ... 127]
+- The difference between TINYINT(1), TINYINT(2), TINYINT(3) is that it pads the values on the left side using the display width
+  [link: https://stackoverflow.com/questions/12839927/mysql-tinyint-2-vs-tinyint1-what-is-the-difference]
